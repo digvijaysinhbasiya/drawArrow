@@ -39,6 +39,10 @@ def midpoint(a, b):
 
 
 def heading_target_from_p1(pts):
+    """
+    Use midpoint of the shorter edge adjacent to P1.
+    Adjacent edges: P1-P2 and P4-P1
+    """
     p1, p2, p3, p4 = pts
 
     d12 = np.linalg.norm(p2 - p1)
